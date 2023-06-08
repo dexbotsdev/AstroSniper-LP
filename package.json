@@ -1,0 +1,38 @@
+{
+  "name": "astrosniper-lp",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@normalizex/honeypot-is": "^1.0.3",
+    "@ptkdev/logger": "^1.8.0",
+    "abi-decoder": "^2.4.0",
+    "async-retry": "^1.3.3",
+    "axios": "^1.3.2",
+    "crypto-js": "^4.1.1",
+    "dexscreener-api": "^0.0.7",
+    "dotenv": "^16.1.4",
+    "emitter": "^0.0.5",
+    "ethers": "^5.5.2",
+    "parse": "^4.1.0",
+    "readline-sync": "^1.4.10",
+    "web3": "^1.10.0"
+  },
+  "pkg": {
+    "scripts": "src/*/**.js",
+    "targets": [
+      "node16-macos-x64"
+    ],
+    "outputPath": "dist",
+    "assets": [
+      "node_modules/axios/dist/node/axios.cjs"
+    ]
+  }
+}
