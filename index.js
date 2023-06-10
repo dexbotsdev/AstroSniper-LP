@@ -17,6 +17,10 @@ import approveToken from "./src/lib/approve.js";
 import buyToken from "./src/lib/buyToken.js";
 import sellTokenOnStopLoss from "./src/lib/sellOnStopLoss.js";
 import monitorRugPull from "./src/lib/monitorRugPullAndSell.js";
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
+
 const provider = new providers.WebSocketProvider(ETH_NODE_WSS)
 const wallet = new Wallet(privateKey);
 const myAddress = wallet.address;
